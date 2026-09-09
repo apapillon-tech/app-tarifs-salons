@@ -4,7 +4,6 @@ import pandas as pd
 # Configuration de la page pour les mobiles
 st.set_page_config(page_title="Tarifs Salons", page_icon="📱", layout="centered")
 
-@st.cache_data
 def load_data():
     # Lecture de votre fichier Excel nettoyé
     df = pd.read_excel("fixed.xlsx")
